@@ -1,0 +1,115 @@
+= Projecte 3 Grup 1 
+:toc:
+:toc-title: Índex
+
+== Introducció
+
+Aquest projecte consisteix en el desenvolupament d'una aplicació de lloguer de vehicles que permet als usuaris consultar vehicles disponibles i realitzar reserves de manera senzilla.
+
+El sistema està format per dos components principals:
+
+* Un **backend** desenvolupat amb **Java i Spring Boot**, encarregat de gestionar la lògica de negoci, l'accés a la base de dades i l'exposició d'una API REST.
+* Una **aplicació mòbil Android** desenvolupada amb **Kotlin i Jetpack Compose**, que permet als usuaris interactuar amb el sistema, visualitzar vehicles, gestionar reserves i consultar la informació relacionada.
+
+Aquest repositori conté tant el backend com l'aplicació mòbil del sistema.
+
+== Documentació Tècnica
+
+=== Justificació de decisions de disseny o implementació
+
+Durant el desenvolupament del projecte no s’ha pres cap decisió de disseny o implementació especialment remarcable. S’han seguit les pràctiques habituals recomanades per les tecnologies utilitzades, com ara Spring Boot per al backend i Kotlin amb Jetpack Compose per a l’aplicació mòbil, sense introduir patrons o arquitectures inusuals.
+
+=== Llista final de requeriments implementats
+
+El sistema implementa els següents requeriments funcionals.
+
+==== Requeriments relacionats amb l'usuari
+
+* **RF01 – Login**
+El sistema ha de permetre que un usuari activat pugui iniciar sessió a l’aplicació.
+
+* **RF02 – Registre**
+El sistema ha de permetre que una persona anònima pugui registrar-se com a usuari.
+
+* **RF03 – Recuperar contrasenya**
+El sistema ha de permetre que l’usuari pugui recuperar la contrasenya.
+
+* **RF04 – Editar perfil usuari**
+El sistema ha de permetre que l’usuari pugui modificar les dades del seu perfil.
+
+* **RF05 – Logout**
+El sistema ha de permetre que l’usuari pugui tancar la sessió.
+
+
+==== Requeriments relacionats amb les reserves
+
+* **RF50 – Alta de reserva**
+El sistema ha de permetre que el client pugui donar d’alta una nova reserva.
+
+* **RF51 – Llistat de reserves**
+El sistema ha de permetre que el client pugui llistar les seves reserves.
+
+* **RF52 – Ordenar reserves per data d'inici**
+El sistema ha de permetre que el client pugui ordenar les reserves segons la data d'inici.
+
+* **RF53 – Veure detall d’una reserva**
+El sistema ha de permetre que el client pugui veure el detall d’una reserva en una pantalla específica.
+
+* **RF55 – Anul·lar reserva**
+L’aplicació ha de permetre anul·lar una reserva pròpia abans que comenci el període reservat.
+
+
+==== Requeriments relacionats amb els vehicles
+
+* **RF90 – Llistar vehicles**
+El sistema ha de permetre que l’usuari pugui llistar els vehicles disponibles.
+
+* **RF91 – Veure detall d’un vehicle**
+El sistema ha de permetre que l’usuari pugui veure tota la informació d’un vehicle.
+
+* **RF92 – Ordenar vehicles per preu**
+El sistema ha de permetre que l’usuari pugui ordenar els vehicles per preu.
+
+* **RF56 – Consultar disponibilitat de vehicles per rang de dates**
+El sistema ha de permetre consultar la disponibilitat dels vehicles en funció d’un rang de dates.
+
+
+=== Desviacions respecte a la planificació inicial
+
+Durant el desenvolupament del projecte no s’han produït desviacions significatives respecte a la planificació inicial. Les tasques s’han realitzat segons els sprints previstos i s’han complert els objectius establerts en cada fase.
+
+=== Incidències trobades durant el desenvolupament
+
+Durant el desenvolupament del projecte es van trobar diverses dificultats tècniques.
+
+Una de les primeres incidències va ser la necessitat d'aprendre i comprendre millor el funcionament de **Kotlin amb Jetpack Compose**, tal com es menciona a la retrospectiva del Sprint 1.
+
+També es van detectar dificultats en la implementació d'algunes pantalles, especialment les relacionades amb la creació de reserves, tal com s'indica en diversos Daily Standups del Sprint 1 i Sprint 2.
+
+Durant el Sprint 3 també es va mencionar un problema amb la implementació del **Bottom Navigation**, que va requerir més investigació per poder implementar-lo correctament.
+
+Finalment, també es van trobar incidències relacionades amb l'organització del codi i la necessitat de revisar funcionalitats que deixaven de funcionar després de fer modificacions, tal com es comenta a la retrospectiva del Sprint 2.
+
+== Propostes de Millora
+
+Implementar un sistema unificat de gestió d'errors i validacions tant al backend com a l'aplicació mòbil, per garantir una millor experiència d'usuari i facilitar la detecció i resolució de problemes.
+
+Millorar la interfície d'usuari de l'aplicació mòbil, per fer-les més intuïtives i fàcils d'utilitzar.
+
+Afegir funcionalitats que existien en el projecte anterior, que no s'han implementat en aquest, com la seguretat amb spring security.
+
+Seguretat en el frontend, per exemple, implementant un sistema de tokens per a l'autenticació i autorització dels usuaris, i obligar a fer servir HTTPS per a totes les comunicacions entre el client i el servidor.
+
+== Video de demostració
+
+link:https://drive.google.com/file/d/199iNBvb-pQc2sguG6nDSuLy4OguRE2jP/view?usp=drivesdk[Ver vídeo de demostració a Google Drive]
+
+== Conclusió
+
+El desenvolupament d’aquest projecte ha permès aplicar els coneixements treballats durant el curs en el desenvolupament d’una aplicació amb backend i aplicació mòbil.
+
+Durant el projecte s’han implementat diverses funcionalitats com el sistema de login, la gestió de vehicles i la gestió de reserves, utilitzant tecnologies com Spring Boot i Kotlin amb Jetpack Compose.
+
+El treball organitzat en sprints ha ajudat a distribuir les tasques i fer un seguiment del progrés del projecte.
+
+Tot i les dificultats trobades durant el desenvolupament, aquestes han servit per millorar la comprensió de les tecnologies utilitzades i adquirir més experiència en el desenvolupament d’aplicacions.
